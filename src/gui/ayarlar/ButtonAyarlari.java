@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gui.ayarlar;
+
+import java.awt.Color;
+import javax.swing.JButton;
+
+/**
+ *
+ * @author sevinc
+ */
+public class ButtonAyarlari {
+    private static  Color originColor;
+    
+    public static  void setBg(JButton button ,Color c){
+        
+        originColor = button.getBackground();
+        button.setBackground(c);
+    }
+    
+    public static void setOriginColor(JButton button){
+        button.setBackground(originColor);
+    }
+
+  
+ 
+    
+}
